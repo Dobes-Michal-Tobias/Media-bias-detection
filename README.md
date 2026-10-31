@@ -3,11 +3,15 @@
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![NLP](https://img.shields.io/badge/NLP-Czert%2FRobeCzech-green)](https://huggingface.co/ufal/robeczech-base)
 [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-In%20Progress-orange)]()
+[![Status](https://img.shields.io/badge/Status-Defended%202026-brightgreen)]()
 
 > **Master's Thesis** | Palacký University Olomouc | Department of General Linguistics
 
+📄 **Full text (in Czech, with English abstract):** [theses.cz](https://theses.cz/id/4rkky5/Dobes-Michal-Tobias_Diplomova-prace.pdf)
+
 This repository contains the source code, experimental framework, and documentation for a master's thesis focused on the **automated identification of lexical units with the potential to violate informational quality** in Czech news texts (abbreviated as LJMPNIK — *lexikální jednotka mající potenciál narušit informační kvalitu zpravodajství*). The project combines domain knowledge from media studies and linguistics with modern NLP (Natural Language Processing) and machine learning methods.
+
+**Main result:** the largest gain comes from moving from the unsupervised to the supervised paradigm. At word level, AUPRC rises from 0.162 (M1, anomaly detection) to 0.733 (M2, SVM with RBF kernel over RobeCzech embeddings). Evaluated on a Gold standard of 520 annotated blocks (1,560 sentences, 305 unique LJMPNIK tokens).
 
 ---
 
@@ -41,7 +45,7 @@ The project is built on **two unique datasets created by the author** specifical
 * **GOLD Dataset:** A high-quality, manually annotated dataset. Contains expert-verified examples of lexical units with the potential to violate informational quality (a combination of real news texts and LLM-augmented samples). Serves as the *Ground Truth* for evaluation.
 * **SILVER Dataset:** A large, automatically generated weakly-labelled dataset. Used to train model robustness and validate methods on a larger data volume.
 
-> **Note on data availability:** Due to the ongoing thesis proceedings and the originality of the data, **the datasets are not currently publicly available**. Their release in the [Releases](../../releases) section is planned after submission and defence (Summer Semester 2026).
+> **Note on data availability:** The datasets are not publicly released. They are **available on request** from the author (contact below).
 
 ## Technologies & Tools
 
@@ -94,10 +98,7 @@ The project follows a modular structure separating data, experimental notebooks,
 
 **Michal Tobiáš Dobeš**
 
-* Student, NMgr. General Linguistics, Faculty of Arts, Palacký University Olomouc
-* Focus: Computational Linguistics, NLP, Machine Learning
+* Mgr., General Linguistics, Faculty of Arts, Palacký University Olomouc (2026)
 * ✉️ [michaltobias.dobes01@upol.cz](mailto:michaltobias.dobes01@upol.cz)
 
 **Supervisor:** Mgr. Vladimír Matlach, Ph.D. (Department of General Linguistics, FF UP)
-
-*Note: The thesis is in progress. Planned completion and defence: Summer Semester 2026.*
