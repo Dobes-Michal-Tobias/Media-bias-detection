@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(python -u -c \":*)",
-      "Bash(done)",
-      "Bash(python3:*)"
-    ]
-  }
-}
